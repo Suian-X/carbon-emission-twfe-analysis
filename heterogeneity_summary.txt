@@ -1,0 +1,30 @@
+Heterogeneity analysis summary
+======================================================================
+
+Sample size: 3312
+Centered quadratic correlation: -0.055449
+
+Group regression sample sizes
+----------------------------------------
+central: 1176
+east: 1152
+west: 984
+southeast: 3024
+northwest: 288
+
+Coefficient tables saved as Excel files
+  Group  Obs ln_pgdp_c ln_pgdp_sq_c industry ln_fiscal ln_science     ln_so2
+central 1176 0.2050***    0.0631***  -0.0673 0.1232***   -0.0188*   -0.0134*
+   east 1152 0.1757***    0.0683***   0.0193   -0.0161    -0.0089 -0.0263***
+   west  984 0.2851***    0.0947***  -0.0585   -0.0007     0.0133  -0.0349**
+    Group  Obs ln_pgdp_c ln_pgdp_sq_c industry ln_fiscal ln_science     ln_so2
+southeast 3024 0.1876***    0.0643***  -0.0045    0.0073    -0.0041 -0.0192***
+northwest  288    0.0845    0.0880***   0.0865    0.1349     0.0161  -0.0805**
+
+Z tests (East vs West)
+ln_pgdp_c: z=-1.265, p=0.206
+ln_pgdp_sq_c: z=-0.927, p=0.354
+
+Wald tests
+region: stat=39.2177, p=0.0001 -> Significant heterogeneity detected
+hu_line: stat=22.2755, p=0.0011 -> Significant heterogeneity detected

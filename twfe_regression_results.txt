@@ -1,0 +1,51 @@
+Two-way Fixed Effects Regression Results
+======================================================================
+
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:                    eff   R-squared:                        0.1555
+Estimator:                   PanelOLS   R-squared (Between):              0.5718
+No. Observations:                3312   R-squared (Within):               0.0384
+Date:                Fri, Apr 17 2026   R-squared (Overall):              0.5381
+Time:                        02:23:44   Log-likelihood                    3428.3
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      92.657
+Entities:                         276   P-value                           0.0000
+Avg Obs:                       12.000   Distribution:                  F(6,3019)
+Min Obs:                       12.000                                           
+Max Obs:                       12.000   F-statistic (robust):             22.548
+                                        P-value                           0.0000
+Time periods:                      12   Distribution:                  F(6,3019)
+Avg Obs:                       276.00                                           
+Min Obs:                       276.00                                           
+Max Obs:                       276.00                                           
+                                                                                
+                              Parameter Estimates                               
+================================================================================
+              Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+--------------------------------------------------------------------------------
+ln_pgdp_c        0.1791     0.0307     5.8273     0.0000      0.1188      0.2394
+ln_pgdp_sq_c     0.0756     0.0117     6.4467     0.0000      0.0526      0.0986
+industry         0.0525     0.1223     0.4295     0.6676     -0.1873      0.2923
+ln_fiscal        0.0258     0.0285     0.9055     0.3653     -0.0300      0.0816
+ln_science      -0.0010     0.0067    -0.1474     0.8828     -0.0140      0.0121
+ln_so2          -0.0263     0.0067    -3.9260     0.0001     -0.0395     -0.0132
+================================================================================
+
+F-test for Poolability: 17.744
+P-value: 0.0000
+Distribution: F(286,3019)
+
+Included effects: Entity, Time
+
+EKC Turning Point (GDP per capita): 11549.47
+
+VIF (within-demeaned):
+    Variable       VIF
+       const  1.000000
+   ln_pgdp_c  9.254779
+ln_pgdp_sq_c  1.264936
+    industry  1.887994
+   ln_fiscal 10.484052
+  ln_science  3.342473
+      ln_so2  2.029109

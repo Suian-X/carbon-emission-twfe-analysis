@@ -1,0 +1,244 @@
+Robustness check full results
+City and year fixed effects included
+======================================================================
+
+Model: Baseline (Obs: 3312)
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:                    eff   R-squared:                        0.1555
+Estimator:                   PanelOLS   R-squared (Between):              0.5717
+No. Observations:                3312   R-squared (Within):               0.0384
+Date:                Fri, Apr 17 2026   R-squared (Overall):              0.5380
+Time:                        06:19:18   Log-likelihood                    3428.3
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      92.657
+Entities:                         276   P-value                           0.0000
+Avg Obs:                       12.000   Distribution:                  F(6,3019)
+Min Obs:                       12.000                                           
+Max Obs:                       12.000   F-statistic (robust):             22.548
+                                        P-value                           0.0000
+Time periods:                      12   Distribution:                  F(6,3019)
+Avg Obs:                       276.00                                           
+Min Obs:                       276.00                                           
+Max Obs:                       276.00                                           
+                                                                                
+                              Parameter Estimates                               
+================================================================================
+              Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+--------------------------------------------------------------------------------
+ln_pgdp_c        0.1791     0.0307     5.8271     0.0000      0.1188      0.2394
+ln_pgdp_sq_c     0.0756     0.0117     6.4466     0.0000      0.0526      0.0986
+industry         0.0525     0.1223     0.4295     0.6676     -0.1873      0.2923
+ln_fiscal        0.0258     0.0285     0.9054     0.3653     -0.0300      0.0816
+ln_science      -0.0010     0.0067    -0.1469     0.8832     -0.0140      0.0121
+ln_so2          -0.0263     0.0067    -3.9259     0.0001     -0.0395     -0.0132
+================================================================================
+
+F-test for Poolability: 17.744
+P-value: 0.0000
+Distribution: F(286,3019)
+
+Included effects: Entity, Time
+
+----------------------------------------------------------------------
+
+Model: CO2 Intensity (Obs: 3312)
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:             ln_co2_int   R-squared:                        0.3076
+Estimator:                   PanelOLS   R-squared (Between):             -0.8719
+No. Observations:                3312   R-squared (Within):               0.7075
+Date:                Fri, Apr 17 2026   R-squared (Overall):             -0.8373
+Time:                        06:19:18   Log-likelihood                    3346.3
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      223.56
+Entities:                         276   P-value                           0.0000
+Avg Obs:                       12.000   Distribution:                  F(6,3019)
+Min Obs:                       12.000                                           
+Max Obs:                       12.000   F-statistic (robust):             37.175
+                                        P-value                           0.0000
+Time periods:                      12   Distribution:                  F(6,3019)
+Avg Obs:                       276.00                                           
+Min Obs:                       276.00                                           
+Max Obs:                       276.00                                           
+                                                                                
+                              Parameter Estimates                               
+================================================================================
+              Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+--------------------------------------------------------------------------------
+ln_pgdp_c       -0.3876     0.0385    -10.076     0.0000     -0.4630     -0.3122
+ln_pgdp_sq_c    -0.0230     0.0122    -1.8872     0.0592     -0.0470      0.0009
+industry        -0.0861     0.1095    -0.7868     0.4315     -0.3007      0.1285
+ln_fiscal       -0.0194     0.0345    -0.5635     0.5731     -0.0871      0.0482
+ln_science      -0.0219     0.0103    -2.1344     0.0329     -0.0421     -0.0018
+ln_so2           0.0123     0.0077     1.5894     0.1121     -0.0029      0.0275
+================================================================================
+
+F-test for Poolability: 180.97
+P-value: 0.0000
+Distribution: F(286,3019)
+
+Included effects: Entity, Time
+
+----------------------------------------------------------------------
+
+Model: Raw GDP (Obs: 3312)
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:                    eff   R-squared:                        0.1474
+Estimator:                   PanelOLS   R-squared (Between):              0.3959
+No. Observations:                3312   R-squared (Within):               0.0061
+Date:                Fri, Apr 17 2026   R-squared (Overall):              0.3713
+Time:                        06:19:18   Log-likelihood                    3412.4
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      86.983
+Entities:                         276   P-value                           0.0000
+Avg Obs:                       12.000   Distribution:                  F(6,3019)
+Min Obs:                       12.000                                           
+Max Obs:                       12.000   F-statistic (robust):             19.390
+                                        P-value                           0.0000
+Time periods:                      12   Distribution:                  F(6,3019)
+Avg Obs:                       276.00                                           
+Min Obs:                       276.00                                           
+Max Obs:                       276.00                                           
+                                                                                
+                               Parameter Estimates                               
+=================================================================================
+               Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+---------------------------------------------------------------------------------
+pgdp_raw_c        0.0417     0.0067     6.1959     0.0000      0.0285      0.0549
+pgdp_raw_sq_c    -0.0005     0.0004    -1.1939     0.2326     -0.0014      0.0003
+industry          0.0234     0.1127     0.2077     0.8355     -0.1976      0.2444
+ln_fiscal         0.0261     0.0282     0.9250     0.3550     -0.0292      0.0815
+ln_science       -0.0006     0.0070    -0.0858     0.9316     -0.0143      0.0131
+ln_so2           -0.0276     0.0071    -3.8965     0.0001     -0.0415     -0.0137
+=================================================================================
+
+F-test for Poolability: 18.172
+P-value: 0.0000
+Distribution: F(286,3019)
+
+Included effects: Entity, Time
+
+----------------------------------------------------------------------
+
+Model: Winsorized (Obs: 3312)
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:                  eff_w   R-squared:                        0.1522
+Estimator:                   PanelOLS   R-squared (Between):             -0.2601
+No. Observations:                3312   R-squared (Within):              -0.0214
+Date:                Fri, Apr 17 2026   R-squared (Overall):             -0.2450
+Time:                        06:19:18   Log-likelihood                    3421.8
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      90.297
+Entities:                         276   P-value                           0.0000
+Avg Obs:                       12.000   Distribution:                  F(6,3019)
+Min Obs:                       12.000                                           
+Max Obs:                       12.000   F-statistic (robust):             20.305
+                                        P-value                           0.0000
+Time periods:                      12   Distribution:                  F(6,3019)
+Avg Obs:                       276.00                                           
+Min Obs:                       276.00                                           
+Max Obs:                       276.00                                           
+                                                                                
+                               Parameter Estimates                                
+==================================================================================
+                Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+----------------------------------------------------------------------------------
+ln_pgdp_c_w        0.2038     0.0308     6.6150     0.0000      0.1434      0.2643
+ln_pgdp_sq_c_w     0.0730     0.0119     6.1551     0.0000      0.0497      0.0962
+industry_w        -0.0068     0.1184    -0.0573     0.9543     -0.2389      0.2253
+ln_fiscal_w        0.0191     0.0330     0.5784     0.5630     -0.0456      0.0837
+ln_science_w      -0.0051     0.0068    -0.7487     0.4541     -0.0185      0.0083
+ln_so2_w          -0.0293     0.0080    -3.6769     0.0002     -0.0449     -0.0137
+==================================================================================
+
+F-test for Poolability: 17.795
+P-value: 0.0000
+Distribution: F(286,3019)
+
+Included effects: Entity, Time
+
+----------------------------------------------------------------------
+
+Model: No Municipalities (Obs: 3264)
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:                    eff   R-squared:                        0.1432
+Estimator:                   PanelOLS   R-squared (Between):              0.7890
+No. Observations:                3264   R-squared (Within):               0.0178
+Date:                Fri, Apr 17 2026   R-squared (Overall):              0.7417
+Time:                        06:19:18   Log-likelihood                    3413.0
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      82.867
+Entities:                         272   P-value                           0.0000
+Avg Obs:                       12.000   Distribution:                  F(6,2975)
+Min Obs:                       12.000                                           
+Max Obs:                       12.000   F-statistic (robust):             21.297
+                                        P-value                           0.0000
+Time periods:                      12   Distribution:                  F(6,2975)
+Avg Obs:                       272.00                                           
+Min Obs:                       272.00                                           
+Max Obs:                       272.00                                           
+                                                                                
+                              Parameter Estimates                               
+================================================================================
+              Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+--------------------------------------------------------------------------------
+ln_pgdp_c        0.1707     0.0306     5.5810     0.0000      0.1107      0.2307
+ln_pgdp_sq_c     0.0709     0.0118     6.0147     0.0000      0.0478      0.0940
+industry         0.0581     0.1228     0.4732     0.6361     -0.1827      0.2990
+ln_fiscal        0.0302     0.0290     1.0393     0.2988     -0.0267      0.0871
+ln_science    3.505e-05     0.0067     0.0053     0.9958     -0.0130      0.0131
+ln_so2          -0.0234     0.0065    -3.5975     0.0003     -0.0361     -0.0106
+================================================================================
+
+F-test for Poolability: 18.462
+P-value: 0.0000
+Distribution: F(282,2975)
+
+Included effects: Entity, Time
+
+----------------------------------------------------------------------
+
+Model: Two-way Clustering (Obs: 3312)
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:                    eff   R-squared:                        0.1555
+Estimator:                   PanelOLS   R-squared (Between):              0.5717
+No. Observations:                3312   R-squared (Within):               0.0384
+Date:                Fri, Apr 17 2026   R-squared (Overall):              0.5380
+Time:                        06:19:18   Log-likelihood                    3428.3
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      92.657
+Entities:                         276   P-value                           0.0000
+Avg Obs:                       12.000   Distribution:                  F(6,3019)
+Min Obs:                       12.000                                           
+Max Obs:                       12.000   F-statistic (robust):             12.900
+                                        P-value                           0.0000
+Time periods:                      12   Distribution:                  F(6,3019)
+Avg Obs:                       276.00                                           
+Min Obs:                       276.00                                           
+Max Obs:                       276.00                                           
+                                                                                
+                              Parameter Estimates                               
+================================================================================
+              Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+--------------------------------------------------------------------------------
+ln_pgdp_c        0.1791     0.0457     3.9190     0.0001      0.0895      0.2687
+ln_pgdp_sq_c     0.0756     0.0157     4.8292     0.0000      0.0449      0.1063
+industry         0.0525     0.1504     0.3492     0.7270     -0.2424      0.3474
+ln_fiscal        0.0258     0.0298     0.8665     0.3863     -0.0326      0.0841
+ln_science      -0.0010     0.0067    -0.1465     0.8836     -0.0141      0.0121
+ln_so2          -0.0263     0.0071    -3.7185     0.0002     -0.0402     -0.0124
+================================================================================
+
+F-test for Poolability: 17.744
+P-value: 0.0000
+Distribution: F(286,3019)
+
+Included effects: Entity, Time
+
+----------------------------------------------------------------------
+

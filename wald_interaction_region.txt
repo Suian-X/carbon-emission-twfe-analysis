@@ -1,0 +1,55 @@
+Interaction regression results - region
+======================================================================
+
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:                    eff   R-squared:                        0.1836
+Estimator:                   PanelOLS   R-squared (Between):             -2.1836
+No. Observations:                3312   R-squared (Within):              -0.0715
+Date:                Fri, Apr 17 2026   R-squared (Overall):             -2.0501
+Time:                        05:36:55   Log-likelihood                    3484.2
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      37.559
+Entities:                         276   P-value                           0.0000
+Avg Obs:                       12.000   Distribution:                 F(18,3007)
+Min Obs:                       12.000                                           
+Max Obs:                       12.000   F-statistic (robust):             9.8660
+                                        P-value                           0.0000
+Time periods:                      12   Distribution:                 F(18,3007)
+Avg Obs:                       276.00                                           
+Min Obs:                       276.00                                           
+Max Obs:                       276.00                                           
+                                                                                
+                                  Parameter Estimates                                  
+=======================================================================================
+                     Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+---------------------------------------------------------------------------------------
+ln_pgdp_c               0.1911     0.0335     5.7087     0.0000      0.1255      0.2568
+ln_pgdp_sq_c            0.0652     0.0154     4.2397     0.0000      0.0350      0.0953
+industry               -0.0364     0.1080    -0.3371     0.7360     -0.2483      0.1754
+ln_fiscal               0.1008     0.0319     3.1648     0.0016      0.0384      0.1633
+ln_science             -0.0165     0.0095    -1.7368     0.0825     -0.0352      0.0021
+ln_so2                 -0.0122     0.0071    -1.7155     0.0864     -0.0261      0.0017
+ln_pgdp_c_x_east        0.0077     0.0657     0.1169     0.9069     -0.1211      0.1365
+ln_pgdp_sq_c_x_east     0.0039     0.0248     0.1587     0.8739     -0.0447      0.0525
+industry_x_east        -0.0786     0.1930    -0.4069     0.6841     -0.4571      0.2999
+ln_fiscal_x_east       -0.0705     0.0540    -1.3057     0.1917     -0.1765      0.0354
+ln_science_x_east       0.0010     0.0147     0.0685     0.9454     -0.0279      0.0299
+ln_so2_x_east          -0.0261     0.0099    -2.6314     0.0085     -0.0456     -0.0067
+ln_pgdp_c_x_west        0.0551     0.0506     1.0893     0.2761     -0.0441      0.1543
+ln_pgdp_sq_c_x_west     0.0294     0.0257     1.1434     0.2530     -0.0210      0.0798
+industry_x_west         0.1104     0.1598     0.6910     0.4896     -0.2029      0.4238
+ln_fiscal_x_west       -0.1213     0.0434    -2.7987     0.0052     -0.2063     -0.0363
+ln_science_x_west       0.0334     0.0153     2.1797     0.0294      0.0034      0.0634
+ln_so2_x_west          -0.0104     0.0150    -0.6919     0.4891     -0.0398      0.0190
+=======================================================================================
+
+F-test for Poolability: 17.352
+P-value: 0.0000
+Distribution: F(286,3007)
+
+Included effects: Entity, Time
+
+======================================================================
+Wald test: stat=39.2177, p=0.0001
+Conclusion: Significant heterogeneity detected
